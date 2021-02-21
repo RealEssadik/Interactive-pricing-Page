@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png" />
+    <title>Interactive pricing component</title>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Simple, Traffic-based Pricing</h1>
+        <p>Sign Up for our 30-day trail, no credit card required</p>
+      </header>
+
+      <aside>
+        <!-- Price bar monthly or yearly -->
+        <div class="tarrif">
+          <div class="page-views"><span>100K</span> pageviews</div>
+          <div class="price">
+            <span>$ <span class="pricefix">16</span>.00</span>
+            <span class="month">/month</span>
+          </div>
+        </div>
+
+        <!-- Progress bar -->
+        <div class="progress">
+          <div class="progress__bar">
+            <input
+              type="range"
+              min="1"
+              max="5"
+              step="1"
+              value="3"
+              class="range"
+              name=""
+              id=""
+            />
+          </div>
+
+          <!-- Switch between monthly and yearly price -->
+          <div class="monthly">
+            <span>monthly billing</span>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+
+            <span>yearly billing</span>
+            <span class="discount">25% discount</span>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- Features -->
+        <div class="start">
+          <ul>
+            <li>Unlimited wibsite</li>
+            <li>100% data ounership</li>
+            <li>Email reports</li>
+          </ul>
+          <button>Start my trail</button>
+        </div>
+      </aside>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
